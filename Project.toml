@@ -1,0 +1,9 @@
+name = "TFIDF"
+uuid = "2841d249-20d1-448a-8f4f-e4924d4d8a20"
+authors = ["Lior Sinai <sinailior@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
