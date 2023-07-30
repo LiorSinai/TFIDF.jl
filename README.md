@@ -46,7 +46,7 @@ using StatsBase: mean
 loss(model, x::AbstractMatrix, y::AbstractMatrix) = logitcrossentropy(model(x), y)
 opt = ADAM()
 model = Dense(length(words), nlabels, identity)
-opt_state = Flux.setup(Adam(), model)
+opt_state = Flux.setup(opt, model)
 data =  Flux.DataLoader((tfidf, one_hot_labels); batchsize=32, shuffle=true)
 Flux.train!(loss, model, data, opt_state)
 acc = mean(onecold(model(tfidf)) .== onecold(one_hot_labels))
