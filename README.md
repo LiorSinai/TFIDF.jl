@@ -1,6 +1,9 @@
 # TFIDF.jl 
 ## Term Frequency - Inverse Document Frequency
 
+[![Build Status](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml?query=branch%3Amain)
+
+
 A model based on term frequency and inverse document frequency.
 - Term frequency: number of times a term/word/token appears in a document.
 - Document frequency: 1 if appears in a document; 0 otherwise. 
@@ -63,7 +66,7 @@ end
 ## Installation
 
 Download the GitHub repository (it is not registered). Then in the Julia REPL:
-```
+```Julia
 julia> ] # enter package mode
 (@v1.x) pkg> dev path\\to\\TermFrequencyInverseDocumentFrequency
 julia> using Revise # for dynamic editing of code
