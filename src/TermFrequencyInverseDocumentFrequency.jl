@@ -1,4 +1,4 @@
-module TFIDF
+module TermFrequencyInverseDocumentFrequency
 
 using SparseArrays
 using DataStructures
@@ -157,4 +157,4 @@ function normalize(X::SparseMatrixCSC{<:AbstractFloat})
     Xnorm
 end
 
-end
+end # module TermFrequencyInverseDocumentFrequency

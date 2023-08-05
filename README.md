@@ -1,8 +1,7 @@
-# TFIDF.jl 
-## Term Frequency - Inverse Document Frequency
+# TermFrequencyInverseDocumentFrequency.jl 
+## Term Frequency - Inverse Document Frequency (TF-IDF)
 
 [![Build Status](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml?query=branch%3Amain)
-
 
 A model based on term frequency and inverse document frequency.
 - Term frequency: number of times a term/word/token appears in a document.
@@ -12,12 +11,12 @@ These are calculated per document and the results are stored in a `TermMatrix` w
 
 The document frequency is then `df=sum(term_matrix .> 0, dims=2)`. The inverse document frequency is the reciprocal of this. Here it is also normalized and shifted by one: `idf=log.((1 + ndocuments)./(1 .+ df)) .+ 1`. 
 
-These two values multiplied together give the TFIDF: `term_matrix .* idf`. For efficiency, this calculation is not done using a broadcast but rather by iterating over the sparse matrix arrays. A model can then use the TFIDF as the input feature. 
+These two values multiplied together give the TF-IDF: `term_matrix .* idf`. For efficiency, this calculation is not done using a broadcast but rather by iterating over the sparse matrix arrays. A model can then use the TF-IDF as the input feature. 
 
 ## Usage
 
 ```Julia
-using TFIDF
+using TermFrequencyInverseDocumentFrequency
 corpus = [
     "This is the first document.",
     "This document is the second document.",

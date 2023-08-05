@@ -1,4 +1,4 @@
-name = "TFIDF"
+name = "TermFrequencyInverseDocumentFrequency"
 uuid = "2841d249-20d1-448a-8f4f-e4924d4d8a20"
 authors = ["Lior Sinai <sinailior@gmail.com>"]
 version = "0.1.0"

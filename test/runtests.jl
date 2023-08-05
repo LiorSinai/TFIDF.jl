@@ -1,4 +1,4 @@
-using TFIDF
+using TermFrequencyInverseDocumentFrequency
 using Test
 using SparseArrays
 
