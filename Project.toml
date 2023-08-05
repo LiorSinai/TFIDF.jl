@@ -1,7 +1,7 @@
 name = "TFIDF"
 uuid = "2841d249-20d1-448a-8f4f-e4924d4d8a20"
 authors = ["Lior Sinai <sinailior@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
