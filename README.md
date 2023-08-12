@@ -1,7 +1,7 @@
 # TermFrequencyInverseDocumentFrequency.jl 
 ## Term Frequency - Inverse Document Frequency (TF-IDF)
 
-[![Build Status](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/LiorSinai/PackageTemplate.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://github.com/LiorSinai/TermFrequencyInverseDocumentFrequency.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/LiorSinai/TermFrequencyInverseDocumentFrequency.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
 A model based on term frequency and inverse document frequency.
 - Term frequency: number of times a term/word/token appears in a document.
