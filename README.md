@@ -64,10 +64,20 @@ end
 
 ## Installation
 
-Download the GitHub repository (it is not registered). Then in the Julia REPL:
+Install via the official Julia package repository:
 ```Julia
 julia> ] # enter package mode
-(@v1.x) pkg> dev path\\to\\TermFrequencyInverseDocumentFrequency
+(@v1.x) pkg> add TermFrequencyInverseDocumentFrequency
+```
+
+### Development
+
+This is an alternative to the official installation.
+
+Download the GitHub repository. Then:
+```Julia
+julia> ] # enter package mode
+(@v1.x) pkg> dev path\\to\\TermFrequencyInverseDocumentFrequency.jl
 julia> using Revise # for dynamic editing of code
 julia> using TermFrequencyInverseDocumentFrequency
 ```
